@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>bim功能展示</title>
+</head>
+<style>
+    .measure-btn {
+        color:#ffffff;
+        background-color:#65a7f0;
+        position:absolute;
+        top:766px;
+        width:100px;
+        height:30px;
+    }
+
+    .clip-btn {
+        color:#ffffff;
+        background-color: #53f07c;
+        position:absolute;
+        top:796px;
+        width:100px;
+        height:30px;
+    }
+</style>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="measure-btn1" class="measure-btn" style="left:0;">点到点测距</div>
+    <div id="modify-measure-btn1" class="measure-btn" style="left:100px;">修改点到点</div>
+    <div id="destroy-measure-btn1" class="measure-btn" style="left:200px;">销毁点到点</div>
+    <div id="measure-btn2" class="measure-btn" style="left:300px;">角度测量</div>
+    <div id="modify-measure-btn2" class="measure-btn" style="left:400px;">修改角度</div>
+    <div id="destroy-measure-btn2" class="measure-btn" style="left:500px;">销毁角度</div>
+
+    <div id="clip-btn" class="clip-btn" style="left:0;">包围盒剖切</div>
+</body>
+<script src="algorism/Matrix4.js"></script>
+<script src="algorism/Quaternion.js"></script>
+<script src="algorism/Vector3.js"></script>
+
+<script src="./plugin/three/three.js"></script>
+<script src="./plugin/three/Detector.js"></script>
+<script src="./loaders/DDSLoader.js"></script>
+<script src="./loaders/MTLLoader.js"></script>
+<script src="./loaders/OBJLoader.js"></script>
+<script src="./plugin/three/TrackballControls.js"></script>
+
+<script src="graphic/CameraManager.js"></script>
+<script src="graphic/ControlManager.js"></script>
+<script src="graphic/SceneManager.js"></script>
+<script src="graphic/RenderManager.js"></script>
+<script src="adaptor/text/TextDiv.js"></script>
+<script src="drawer/DrawManager.js"></script>
+<script src="loaders/LoadManager.js"></script>
+
+<script src="drawer/DrawAdaptor.js"></script>
+<script src="adaptor/clip/BoxClipHelper.js"></script>
+<script src="adaptor/clip/BoxClip.js"></script>
+<script src="adaptor/measure/MeasureNode.js"></script>
+<script src="adaptor/measure/MeasureDistance.js"></script>
+<script src="adaptor/measure/MeasureAngle.js"></script>
+</html>
